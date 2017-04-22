@@ -142,7 +142,7 @@ class NavigationCard extends React.Component<any, Props, any> {
 
 const styles = StyleSheet.create({
   main: {
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF00',
     bottom: 0,
     left: 0,
     position: 'absolute',

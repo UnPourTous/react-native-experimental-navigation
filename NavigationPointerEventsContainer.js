@@ -116,6 +116,9 @@ function create(
     }
 
     _onPositionChange(): void {
+      if (this.props && this.props.scene && this.props.scene.navigationState && this.props.scene.navigationState.onPanMoved) {
+        this.props.scene.navigationState.onPanMoved()
+      }
       if (this._component) {
         const pointerEvents = this._computePointerEvents();
         if (this._pointerEvents !== pointerEvents) {
